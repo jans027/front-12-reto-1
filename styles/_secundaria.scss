@@ -1,0 +1,282 @@
+$color-primario: rgb(52, 145, 189);
+@mixin posicion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.section1{
+    @include posicion;
+    padding: 1.5em 0 .5em 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    .bell{
+        a{
+            color: black;
+        }
+    }
+    
+}
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: .5em;
+    :hover{
+        color: #ffffff;
+        background-color: $color-primario;
+    }
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    :hover .dropdown-content{
+        display: block;
+    }
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    a{
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        :hover{
+            background-color: #f1f1f1
+        }
+    }
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+// .....................................................
+.section2, .section5{
+    display: flex;
+    justify-content: space-between;
+    @include posicion;
+    padding: .5em 0;
+    font-size: 1.3em;
+    a{
+        text-decoration: none;
+        color: black;
+        
+    }
+    
+}
+// ......................................................
+.section3{
+    @include posicion;
+    box-shadow: 0px 1px 18px #888888;
+    padding: .6em;
+    border-radius: .5em;
+    .texto01{
+        h3{
+            font-size: .9em;
+        }
+        p{
+            color: black;
+            font-size: .7em;
+            margin: -1em 0 1em 0;
+            
+        }
+    }
+    
+    .divFotos{
+        display: flex;
+        // flex-wrap: wrap;
+        justify-content: space-between;
+        .img1{
+            width: 48%;
+            height: 12em;
+            overflow: hidden;
+            border-radius: 1em;
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+        .divFotos2{
+            width: 48%;
+            // height: 6em;
+            .img2{
+                border-radius: 1em;
+                width: 100%;
+                height: 7em;
+                object-fit: cover;
+                object-position: center;
+            }
+            .mapa{
+                width: 100%;
+                height: 5em;
+                border-radius: 1em;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 0 0 0 1em;
+                .location{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 90%;
+                    height: 100%;
+                    font-size: 1.5em;
+                    color: $color-primario;
+                }
+                .button{
+                    text-decoration: none;
+                    background-color: $color-primario;
+                    height: 30%;
+                    transform: rotate(-90deg);
+                    padding: .5em;
+                    border-radius: .5em;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+}
+// ......................................................
+.section4{
+    @include posicion;
+    display: flex;
+    justify-content: space-between;
+    .contenedor1{
+        width: 50%;
+        align-items: center;
+        display: flex;
+        position: relative;
+        .imagenCirculo{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            overflow:hidden;
+            &:nth-child(4){
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                background-color: $color-primario;
+                color: #ffffff;
+                font-size: .5em;
+            }
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
+            
+    }
+    .contenedor2{
+        width: 50%;
+        line-height: .1em;
+        text-align: end;
+        
+        h3{
+            font-size: .6em;
+        }
+        p{
+            font-size: .5em;
+            color: rgb(116, 116, 116);
+        }
+    }
+}
+
+// ......................................................
+.section6{
+    @include posicion;
+    display: flex;
+    justify-content: space-around;
+    padding: .3em 1em;
+    box-shadow: 0px 1px 18px #888888;
+    border-radius: .5em;
+    margin-bottom: 1.8em;
+    .image1{
+        width: 40%;
+        height:6em;
+        overflow: hidden;
+        border-radius: 1em;
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .cont1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        float: left;
+        width: 90%;
+        padding: 0 .5em;
+        h3{
+            font-size: .7em;
+            margin-bottom: 1.4em;
+        }
+        p{
+            color: black;
+            font-size: .7em;
+            margin: -1em 0 1em 0;
+        }
+    }
+    .contenedor3{
+        width:100%;
+        align-items: center;
+        display: flex;
+        padding: 1em 0;
+        justify-content: space-around;
+        
+        .imagenCirculo1{
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            overflow:hidden;
+            &:nth-child(4){
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                background-color: $color-primario;
+                color: #ffffff;
+                font-size: .5em;
+            }
+            img{
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+        .contenedor3_1{
+            text-align: end;
+            line-height: .1em;
+            h3{
+                font-size: .4em;
+            }
+            p{
+                font-size: .2em;
+                color: black;
+            }
+        }
+    }
+}
+footer{
+    @include posicion;
+    height: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        font-size: 1.3em;
+        color: $color-primario;
+        padding: .4em;
+        border-radius: .5em;
+        &:hover{
+            background-color: $color-primario;
+            color: #ffffff;
+        }
+    }
+}

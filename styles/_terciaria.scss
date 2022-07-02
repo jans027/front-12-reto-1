@@ -1,0 +1,159 @@
+$color-primario: rgb(52, 145, 189);
+@mixin posicion {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.mainTerciaria{
+    background-image: url(https://picsum.photos/id/1041/500);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .section1-3{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em 0;
+        @include posicion;
+        .divDev{
+            width:15%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            background-color: $color-primario;
+            border-radius: .5em;
+            opacity: 0.5;
+            cursor: pointer;
+            a{
+                text-align: center;
+                width: 100%;
+                font-size:2em;
+                text-decoration: none;
+                color: #ffffff;
+            }
+        }
+        .puntosCardinales{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: $color-primario;
+            opacity: 0.5;
+        }
+    }
+    .detallePeses{
+        @include posicion;
+        height: 53%;
+        .position{
+            position: relative;
+            margin: 2em 0 0 6.5em;
+        }
+        .pes1, .pes2{
+            display: flex; 
+            align-items: center;
+            padding: .3em;
+            height: 40px;
+            // Glassmorphism
+            background: rgba( 255, 255, 255, 0.25 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            width: 55%;
+            .detPes1{
+                color: #77a9af;
+                border-radius: .7em;
+                width: 25%;
+                height: 40px;
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                border: 1px solid rgb(53, 95, 62);
+                // Glassmorphism
+                background: rgba( 255, 255, 255, 0.25 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4px );
+                -webkit-backdrop-filter: blur( 4px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+            }
+            p{
+                font-size: 1em;
+                line-height: 1em;
+                color: rgb(31, 42, 143);
+            }
+        }
+    }
+    .detalleUbicacion{
+        @include posicion;
+        height: 25%;
+        border-radius: .5em;
+        padding: .5em 0;
+        // Glassmorphism
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        .ubicacion3{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            justify-content: space-between;
+            border-radius: .5em;
+            // Glassmorphism
+            background: rgba(255, 255, 255, 0.158);
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 4px );
+            -webkit-backdrop-filter: blur( 4px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            .iconLocation{
+                padding: .5em 0 .4em .4em;
+                text-align: center;
+                font-size: 1.8em;
+                color: #ffffff;
+            }
+            .textLocation{
+                font-size: .7em;
+                color: #ffffff;
+                width: 80%;
+                line-height: .2em;
+            }
+        }
+        .ubicacion4{
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            margin-top: 1em;
+            justify-content: space-between;
+            border-radius: .5em;
+            
+            .iconLocation1{
+                width: 18%;
+                padding: .5em 0 .4em .4em;
+                text-align: center;
+                font-size: 1.8em;
+                color: #ffffff;
+                border: 1px solid red;
+                // Glassmorphism
+                background: rgba(255, 255, 255, 0.158);
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 4px );
+                -webkit-backdrop-filter: blur( 4px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+            }
+            .textLocatio1{
+                font-size: .8em;
+                color: #ffffff;
+                width: 60%;
+                line-height: .2em;
+            }
+        }
+    }
+}
